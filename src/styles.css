@@ -1,0 +1,62 @@
+.App {
+    text-align: center;
+  }
+  
+  a {
+    text-decoration: none;
+    background: #777;
+    color: #fff;
+    padding: 10px;
+    border: 1px solid #000;
+    border-radius: 2px;
+    display: inline-block;
+    margin-top: 200px;
+    letter-spacing: 1px;
+    font-size: 20px;
+  }
+  
+  .toast {
+    width: 100%;
+    padding: 10px;
+    position: absolute;
+    background: #ccc;
+    color: #666;
+    font-size: 200%;
+    text-align: center;
+    left: 0;
+    top: 0;
+    right: 0;
+    transform: translateY(-100px);
+    animation: slideDown 3s;
+  }
+  
+  @keyframes slideDown {
+    0%,
+    100% {
+      -webkit-transform: translateY(-100px);
+    }
+    10%,
+    90% {
+      -webkit-transform: translateY(0px);
+    }
+  }
+  
+  .disabled {
+    pointer-events: none;
+    opacity: 0.3;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    body {
+      font-size: 13px;
+    }
+  
+    a {
+      font-size: inherit;
+    }
+  
+    .toast {
+      padding: 5px;
+    }
+  }
+  
